@@ -4,7 +4,41 @@
 
 }
 
+.promocao_destaque {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+}
 
+.promocao_destaque>a {
+
+    text-align: center;
+    width: 100px;
+    height: 100px;
+}
+
+.cabecalho_dia--promocao {
+    text-align: center;
+    border: 7px solid black;
+    top: -27%;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+
+    position: absolute;
+}
+
+.carne--promocao {
+    background-color: rgb(239, 6, 6);
+}
+
+.laticinio--promocao {
+    background-color: #6d6a6a;
+}
+
+.fruta--promocao {
+    background-color: rgb(22, 194, 48);
+}
 
 #header {
     width: 100%;
@@ -254,3 +288,21 @@ figure img {
 }
 
 /*fim informacoesCartao.html*/
+/*facaCartao.html*/
+.facaCartao {
+
+    margin: auto 0;
+}
+
+/*fim facaCartao.html*/
+
+/*img produtos*/
+.img_abacate {
+    padding-left: 20px;
+}
+
+.img_produto--checkout {
+    padding-left: 20px;
+    width: 230px;
+    height: 230px;
+}

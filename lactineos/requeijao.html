@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Requeijao</title>
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/font-awesome.css">
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+
+
+</head>
+
+<body>
+    <div id="header" class="active fixed-top">
+        <div class="container-fluid">
+            <div class="back">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#botao-menu">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <a href="#" class="navbar-brand logo"><img src="../img/images.png"
+                            style="width: 50px; height:50px;">GreatFood</a>
+
+                    <div class="collapse navbar-collapse header" id="botao-menu">
+                        <ul class="navbar-nav ">
+                            <li class="navbar-item active">
+                                <a href="index.html" class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="mercado.html" class="nav-link">Mercado</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="" class="nav-link">Resgatar</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Fale Conosco</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="btn btn-success botao-header">ligar</button>
+
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!--codigo corpo-->
+    <div class="container block">
+        <h6 class="subtitulo-desconto"><span>30%</span>Descontos</h6>
+        <div class="row border">
+
+            <div class="col-md-4">
+                <fieldset class="produto-selecionado">
+
+                    <div class="produto-checkout">
+
+                        <img class="img_produto--checkout" src="../img/laticineos/reiqueijao.png" alt="">
+                    </div>
+            </div>
+            </fieldset>
+            <div class="col-md-4">
+                <h2>Informação do Cartão</h2>
+
+                <fieldset class="cartao-informaçoes form-block">
+                    <label for="cartao-bandeira">Cartão Bandeira</label>
+                    <select id="cartao-bandeira" class="custom-select">
+                        <option disabled selected>Selecione uma opção</option>
+                        <option value="mastercard">MasterCard</option>
+                        <option value="visa">Visa</option>
+                    </select>
+                    <label for="validade-cartao">cartao validade</label>
+                    <input type="month" id="validade-cartao" class="form-control">
+
+                </fieldset>
+                <div class="form-group posicao-cupom">
+                    <label for="cupom">Cupom descontos</label>
+                    <input type="text" class="form-control" id="cupom" placeholder="TX-P000.56">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <h2>Valor da Comprar</h2>
+                <fieldset class="valorDaCompra">
+                    <dl>
+                        <dt>Quantidade</dt>
+                        <dd>12</dd>
+                        <dt>preco</dt>
+                        <dd id="preco">6,00</dd>
+                    </dl>
+                    <div class="form-group">
+                        <label for="qtd">Quantidade:</label>
+                        <input type="number" id="qtd" min="12" max="120" value="12" step="12" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="total">Total:</label>
+                        <output id="total" class="form-control">6,00</output>
+                        <output for="qtd preco" id="total" class="form-control">6,00</output>
+                    </div>
+                    <!-- <label for="total">Laranja-pera</label>
+                    <dl>
+                        <dt id="quantosProduto">12</dt>
+                        <dd class="preco">6,00</dd>
+                    </dl>
+                    <div class="form-group">
+                        <output id="total" class="form-control">Total</output>
+                        <output for="qtd preco" id="total" class="form-control">quantidade</output>
+                        <output id="quantosProduto" class="form-control">quanta duzia</output> -->
+
+
+                    <button class="botaoDeCompra"><img src="../img/carts.png" alt="" class="icon-compra">Adicionar ao
+                        Carrinho</button>
+                    <a href="#" class="ancoraMoeda"><img src="../img/moedaCompra.png" alt=""
+                            class="moedaCompraImg">Compre Moeda</a>
+            </div>
+            </fieldset>
+        </div>
+    </div>
+    <div class="col-md-12">
+
+        <h6 class="text-center"><img src="../img/cartaodecredito.png">descontos
+            com Nosso Cartão de credito ou
+            loja Parceiras</h6>
+
+    </div>
+
+
+    </div>
+    <!--fim codigo corpo-->
+    <footer>
+        <div class="container-fluid mt-5">
+            <div class="row footer">
+                <figure>
+                    <img src="../img/images.png" alt="">
+                    <figcaption>
+                        <h6>Telefone e Contato</h6>
+                        <p>(93)-9999-9999</p>
+                    </figcaption>
+                </figure>
+
+                <div class="col-md-4">
+
+                    <h1>Direitos do Usúarios</h1>
+                    <h6>Fale Conosco</h6>
+                    <h6>Pergunta Frequente</h6>
+                    <h6>Política e Privacidade</h6>
+                    <h6>&copy;GreatFood</h6>
+
+
+                </div>
+                <div class="col-md-2">
+                    <h1>Empresa</h1>
+                    <h6>País:Asía</h6>
+                    <h6>Singapura</h6>
+                    <h6>Cep:0000-000</h6>
+                    <h6>Bairro: Changi</h6>
+                </div>
+
+                <div class="col-xl-2">
+                    <h1>Rede Sociais</h1>
+                    <div class="social">
+                        <img src="../img/whatsapp.png" alt="icone whatsapp">
+                        <img src="../img/twitter.png" alt="icone twitter">
+                        <img src="../img/facebook.png" alt="icone facebook">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <script src="../js/total.js"></script>
+    <script type="text/javascript" src="../js/jquery.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.js"></script>
+</body>
+
+</html>

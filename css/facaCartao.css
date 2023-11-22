@@ -1,0 +1,65 @@
+.form-position {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cores label::after {
+    display: block;
+    content: '';
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    position: absolute;
+    top: 30px;
+}
+
+.cores {
+    position: relative;
+    padding-top: 90px;
+
+
+}
+
+.cores label img {
+    display: block;
+    max-width: 100%;
+}
+
+.cores input[type=radio] {
+    display: none;
+}
+
+.cores input:not(:checked)+label img {
+    display: none;
+}
+
+.cores input:checked+label::after {
+    border-radius: 6px solid rgba(0, 0, 0, 0.3);
+}
+
+label[for=cartao_basic]::after {
+    background: linear-gradient(#050205, #EC1FC0);
+    left: 0;
+}
+
+label[for=cartaovioleta_premium]::after {
+    background: linear-gradient(#6E1FEC, #EC1FC0);
+    left: 200px
+}
+
+label[for=cartao_poupanca_e--credito]::after {
+    background: linear-gradient(#1329A7, #e93d50);
+    left: 400px;
+}
+
+.botao_submit_cartao {
+    background-color: #1EF15D;
+    color: #fff;
+    border-radius: 15%;
+    padding: 10px 40px;
+    display: flex;
+    justify-content: center;
+}

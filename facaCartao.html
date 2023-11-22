@@ -1,37 +1,173 @@
-<div id="header" class="active fixed-top">
-    <div class="container-fluid">
-        <div class="back">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light ">
-                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#botao-menu">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+<!DOCTYPE html>
+<html lang="en">
 
-                <a href="#" class="navbar-brand logo"><img src="./img/images.png"
-                        style="width: 50px; height:50px;">GreatFood</a>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/estilo.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/facaCartao.css">
+    <title>Document</title>
+</head>
 
-                <div class="collapse navbar-collapse header" id="botao-menu">
-                    <ul class="navbar-nav ">
-                        <li class="navbar-item active">
-                            <a href="index.html" class="nav-link">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="mercado.html" class="nav-link">Mercado</a>
-                        </li>
+<body>
+    <div id="header" class="active fixed-top">
+        <div class="container-fluid">
+            <div class="back">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#botao-menu">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
 
-                        <li class="nav-item">
-                            <a href="" class="nav-link">Resgatar</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">Fale Conosco</a>
-                        </li>
-                    </ul>
-                </div>
-                <button class="btn btn-success botao-header">ligar</button>
+                    <a href="#" class="navbar-brand logo"><img src="./img/images.png"
+                            style="width: 50px; height:50px;">GreatFood</a>
 
-            </nav>
+                    <div class="collapse navbar-collapse header" id="botao-menu">
+                        <ul class="navbar-nav ">
+                            <li class="navbar-item active">
+                                <a href="index.html" class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="mercado.html" class="nav-link">Mercado</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="" class="nav-link">Resgatar</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Fale Conosco</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="btn btn-success botao-header">ligar</button>
+
+                </nav>
+            </div>
         </div>
     </div>
-</div>
+    <div class="container block border">
+        <div class="row">
+            <div class="col-md-6">
+                <form action="">
+                    <div class="row">
+                        <div class="col-md-6">
+
+
+                            <h6>Dados Pessoais</h6>
+                            <div class="form-group">
+
+
+                                <label for="nome">Nome Completo</label>
+                                <input type="text" name="" id="nome" placeholder="Digite o seu nome"
+                                    class="form-control">
+                                <div class="form-group">
+                                    <label for="tel">Telefone</label>
+                                    <input type="number" id="tel" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label for="sexo">Sexo</label>
+                                    <input type="radio" name="sexo" id="masculino" checked>
+                                    <label for="masculino col-md-6">Masculino</label>
+                                    <input type="radio" name="sexo" id="feminino">
+                                    <label for="feminino">Feminino</label>
+                                </div>
+                                <div class="form-group">
+                                    <label for="estado">estado</label>
+                                    <select id="estado" class="custom-select">
+                                        <option selected disabled>Selecione Estado</option>
+                                        <option value="sp">São Paulo</option>
+                                        <option value="jr">Rio de Janeiro</option>
+                                    </select>
+
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label for="rg">RG</label>
+                                        <input type="number" name="" id="rg" placeholder="digite seu rg"
+                                            class="form-control">
+                                    </div>
+
+
+                                    <div class="col-md-6">
+                                        <label for="cpf">Cpf</label>
+                                        <input type="number" name="" id="cpf" placeholder="Digite o seu cpf"
+                                            class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                            <label for="email">Email</label>
+                            <input type="email" id="email" placeholder="digite seu melhor email" class="form-control">
+
+
+                            <label for="cep">cep</label>
+                            <input type="number" name="" id="cep" placeholder="digite seu cep" class="form-control">
+
+
+                            <label for="dataNascimentos">Data de Nascimento</label>
+                            <input type="month" name="" id="dataNascimentos" class="form-control">
+                        </div>
+
+
+
+
+
+                        <div class="col-md-6">
+                            <h6>Dados do Cartão</h6>
+                            <div class="form-group">
+
+                                <label for="senha">Senha do cartao</label>
+                                <input type="password" name="" id="senha" placeholder="digite sua senha para o cartão"
+                                    class="form-control">
+                                <label for="escolherValidadeCartao">Validade CVV Cartão</label>
+                                <input type="month" name="" id="escolherValidadeCartao" class="form-control">
+                                <label for="melhorDia">Melhor dia de comprar</label>
+                                <input type="month" name="" id="melhorDia">
+
+                            </div>
+
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="col-6">
+                <form action="" class="form-position">
+                    <h2>Escolha seu cartao</h2>
+
+                    <fieldset class="cores">
+
+                        <input type="radio" name="cartao" id="cartao_basic" name="cartao" value="cartao_basic" checked>
+                        <label for="cartao_basic">
+
+                            <img src="./img/cartaobasic.jpeg" alt="">
+                        </label>
+                        <input type="radio" name="cartao" id="cartaovioleta_premium" value="cartaovioleta_premium">
+                        <label for="cartaovioleta_premium" id="cartao_bancario2">
+                            <img src="./img/cartaovioleta(1).jpeg" alt="">
+                        </label>
+                        <input type="radio" name="cartao" id="cartao_poupanca_e--credito"
+                            value="cartao_poupanca_e--credito " id="lista">
+
+
+                        <label for="cartao_poupanca_e--credito" id="cartao_bancario3">
+
+                            <img src="./img/cartaoazulevioleta.jpeg" alt="">
+                        </label>
+
+                    </fieldset>
+                    <button class="botao_submit_cartao">Ok</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <ul id="lista"></ul>
+    <input type="button" onclick="gerar()" value="Clique">
+
+    </ul>
+    <script src="./js/facaCartao.js"></script>
+</body>
+
+</html>
