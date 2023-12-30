@@ -1,0 +1,50 @@
+.header_menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(#f50400, #ff8862);
+}
+
+.header_menu input {
+    width: 30%;
+}
+
+.header_menu img {
+    width: 280px;
+    height: 150px;
+}
+
+.texto_cumpom {}
+
+.artigo_cupom img {
+    width: 200px;
+    height: 180px;
+    border: 1px solid gray;
+
+}
+
+.anuncio_cumpom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.emoje {
+    display: flex;
+    border: 1px solid black;
+    justify-content: center;
+    margin-left: 80px;
+    vertical-align: middle;
+
+}
+
+.p_descricao--compra {
+    display: flex;
+    flex-direction: column;
+}
+
+.botao_cupom {
+    background-color: greenyellow;
+    border: none;
+}

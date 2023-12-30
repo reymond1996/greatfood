@@ -138,23 +138,30 @@
                     <h2>Escolha seu cartao</h2>
 
                     <fieldset class="cores">
-
-                        <input type="radio" name="cartao" id="cartao_basic" name="cartao" value="cartao_basic" checked>
+                        <output id="lista"></output>
+                        <input type="radio" name="cartao" id="cartao_basic" onclick="gerar()" name="cartao"
+                            value="cartao_basic" checked />
                         <label for="cartao_basic">
 
                             <img src="./img/cartaobasic.jpeg" alt="">
+
                         </label>
-                        <input type="radio" name="cartao" id="cartaovioleta_premium" value="cartaovioleta_premium">
-                        <label for="cartaovioleta_premium" id="cartao_bancario2">
+                        <output id="lista2"></output>
+                        <input type="radio" name="cartao" id="cartaovioleta_premium" onclick="gerar2()"
+                            value="cartaovioleta_premium" />
+                        <label for="cartaovioleta_premium">
                             <img src="./img/cartaovioleta(1).jpeg" alt="">
+
                         </label>
-                        <input type="radio" name="cartao" id="cartao_poupanca_e--credito"
-                            value="cartao_poupanca_e--credito " id="lista">
+                        <output id="lista3"></output>
+                        <input type="radio" name="cartao" id="cartao_poupanca_e--credito" onclick="gerar3()"
+                            value="cartao_poupanca_e--credito" />
 
 
-                        <label for="cartao_poupanca_e--credito" id="cartao_bancario3">
+                        <label for="cartao_poupanca_e--credito">
 
                             <img src="./img/cartaoazulevioleta.jpeg" alt="">
+
                         </label>
 
                     </fieldset>
@@ -163,11 +170,9 @@
             </div>
         </div>
     </div>
-    <ul id="lista"></ul>
-    <input type="button" onclick="gerar()" value="Clique">
 
-    </ul>
-    <script src="./js/facaCartao.js"></script>
+
+    <script type="text/javascript" src="./js/facaCartao.js"></script>
 </body>
 
 </html>

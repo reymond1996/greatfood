@@ -28,6 +28,11 @@
     max-width: 100%;
 }
 
+.cores h6 {
+    display: block;
+    display: none;
+}
+
 .cores input[type=radio] {
     display: none;
 }
